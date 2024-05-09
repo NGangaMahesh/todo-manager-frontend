@@ -1,0 +1,48 @@
+.task-list {
+    background-color: #7091E6;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    overflow-y: scroll;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-tasks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .no-task-img {
+    display: block;
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+  }
+  
+  .no-tasks-container h2 {
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .task-list {
+      margin: 10px; 
+    }
+  
+    .no-task-img {
+      max-width: 90%; 
+    }
+  }
+  
